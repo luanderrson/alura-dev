@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura-Dev</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cabecalho.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/codigo-editor.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/projeto.css">
+</head>
+<header class="cabecalho">
+  <img class="cabecalho__logo" src="/img/Logo.svg" alt="Logo alura-dev">
+  <input class="cabecalho__busca" type="text" placeholder="Busque por algo">
+  <div class="usuario">
+    <div class="usuario__imagem"></div>
+    <span class="usuario__nome">Luanderson</span>
+  </div>
+</header>
+
+<body>
+  <main class="conteudo__principal">
+    <div class="container">
+      <div class="menu">
+        <h2 class="menu__titulo">MENU</h2>
+        <div class="menu__item">
+          <img src="/img/Vector.svg" alt="Icone Editor" class="menu__item--icon">
+          Editor de código
+        </div>
+        <div class="menu__item--comunidade">
+          <img src="/img/Comunidade.svg" alt="Icone Comunidade" class="menu__item--icon__comunidade">
+          Comunidade
+        </div>
+      </div>
+
+      <div class="container__codigo">
+        <div class="codigo__planoDeFundo">
+          <div class="codigo__editor">
+            <img class="botoes_mac" src="/img/mac_buttons.svg" alt="Botoes">
+            <textarea name="espaço_codigo" id="code" cols="30" rows="10">
+              const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+              const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+              const unfold = (f, seed) => { 
+                const go = (f, seed, acc) => { 
+                  const res = f(seed) 
+                  return res ? go(f, res[1], acc.concat([res[0]])) : acc 
+                } 
+                return go(f, seed, []) 
+              }
+            </textarea>
+          </div>
+        </div>
+        <button class="visualizar__highlight">Visualizar com o highlight</button>
+      </div>
+
+      <div class="container__projeto">
+        <div class="projeto">
+          <h2 class="projeto__titulo">Seu projeto</h2>
+          <input type="text" class="projeto__nome" placeholder="Nome do seu Projeto">
+          <textarea name="Descrição Projeto" id="projeto__descricao" cols="30" rows="10"
+            placeholder="Descrição do seu projeto"></textarea>
+          <div class="personalizar">
+            <h2 class="personalizar__titulo">personalizar</h2>
+            <select name="Linguagens" id="personalizar__selecao">
+              <option value="javascript">Javascript</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="python">Python</option>
+            </select>
+            <input class="personalizar__cor" type="color" value="#6BD1FF">
+          </div>
+          <button class="projeto__salvar">Salvar projeto</button>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>

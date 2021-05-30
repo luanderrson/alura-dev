@@ -1,0 +1,49 @@
+.menu{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFFFFF;
+  align-items: flex-start;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.menu__item{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  
+}
+
+.menu__item--comunidade{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  opacity: 0.56;
+}
+
+.menu__item--icon{
+  background: #5081FB;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-right: 20px;
+
+}
+
+
+.menu__titulo{
+  color: #FFFFFF;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+
+.menu__item--icon__comunidade{
+  background: rgba(80, 129, 251, 0.16);
+  padding: 1rem;
+  border-radius: 16px;
+  margin-right: 20px;
+}

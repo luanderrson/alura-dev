@@ -1,0 +1,78 @@
+.container__codigo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 60px;
+  width: 100%;
+}
+
+
+.codigo__planoDeFundo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #6BD1FF;
+  width: 752px;
+  height: 366px;
+  left: 344px;
+  top: 128px;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.codigo__editor{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  background: #141414;
+  width: 688px;
+  height: 302px;
+  left: 32px;
+  top: 32px;
+
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+}
+
+.botoes_mac{
+  margin: 13px;
+}
+
+#code {
+  font-family: 'Roboto Mono', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+
+  background: #141414;
+  border: none;
+  resize: none;
+
+  width: 656px;
+  height: 234px;
+  left: 16px;
+  top: 52px;
+
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+  overflow: hidden;
+}
+
+.visualizar__highlight{
+  width: 100%;
+  height: 56px;
+  left: 344px;
+  top: 526px;
+
+  background: rgba(80, 129, 251, 0.08);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-top: 32px;
+}
+
